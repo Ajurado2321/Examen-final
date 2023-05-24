@@ -11,14 +11,15 @@
                 </div>
 
                 <!-- Navigation Links -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                            {{ __('REGISTRO') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('datos')" :active="request()->routeIs('datos')">
-                        {{ __('INFORME ESTUDIANTES') }}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('registro.index')" :active="request()->routeIs('registro.index')">
+                        {{ __('Registrarse') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('registro.create')" :active="request()->routeIs('registro.create')">
+                        {{ __('Informe Estudiantes') }}
                     </x-nav-link>
                 </div>
             </div>
